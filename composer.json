@@ -1,0 +1,5 @@
+{
+    "require": {
+        "poweronsystem/webframework": "dev-master"
+    }
+}
