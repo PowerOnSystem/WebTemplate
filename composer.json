@@ -1,5 +1,19 @@
 {
+    "name": "poweronsystem/webtemplate",
+    "version": "dev-master",
+    "description": "Template for webframework",
+    "keywords": ["framework", "web design template", "webframework"],
+    "homepage": "https://github.com/poweronsystem/webtemplate",
+    "license": "GPL",
     "require": {
         "poweronsystem/webframework": "dev-master"
-    }
+    },
+    "authors": [
+        {
+            "name": "Lucas Sosa",
+            "email": "sosalucas87@gmail.com",
+            "homepage": "http://www.poweronsistemas.com.ar",
+            "role": "Developer"
+        }
+    ]
 }
