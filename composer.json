@@ -15,5 +15,13 @@
             "homepage": "http://www.poweronsistemas.com.ar",
             "role": "Developer"
         }
-    ]
+    ],
+    "autoload": {
+        "psr-4": {
+            "PowerOn\\Console\\": "config/"
+        }
+    },
+    "scripts": {
+        "post-install-cmd": "PowerOn\\Console\\Console::postInstall"
+    }
 }

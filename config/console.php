@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Copyright (C) PowerOn Sistemas
+ * Copyright (C) Makuc Julian & Makuc Diego S.H.
  *
  * This program is free software: you can redistribute it and/or modify
  * it under the terms of the GNU General Public License as published by
@@ -17,21 +17,24 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/*
- * Rutas de la aplicación, en caso de necesitar otras rutas y no las
- * que vienen por defecto en el patron MVC (controller/action)
- * Formato:
- * return [
- *      [ METHOD, ROUTE, TARGET, NAME ]
- * ]
- * 
- * Ejemplo:
- * return [
- *      ['GET', 'about', 'index#about'],
- *      ['GET', 'user/test/[0-9]*', user#testService', 'user_test']
- * ]
- */
+namespace PowerOn\Console;
 
-return [
+/**
+ * Console configura todo el proyecto luego de instalarlo
+ * @author Lucas Sosa
+ */
+class Console {
     
-];
+    /**
+     * Crea la clave única de la aplicación
+     */
+    public static function postInstall() {
+        $dir = dirname(dirname(__FILE__));
+        $keyfile = $dir . DIRECTORY_SEPARATOR . 'appkey.txt';
+        
+        $file = fopen($keyfile, 'w');
+        fwrite($file, bin2hex(random_bytes(96)));
+        fclose($file);
+        
+    }
+}

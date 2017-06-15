@@ -1,5 +1,4 @@
 <?php
-
 /*
  * Copyright (C) PowerOn Sistemas
  *
@@ -16,22 +15,9 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
-
-/*
- * Rutas de la aplicación, en caso de necesitar otras rutas y no las
- * que vienen por defecto en el patron MVC (controller/action)
- * Formato:
- * return [
- *      [ METHOD, ROUTE, TARGET, NAME ]
- * ]
- * 
- * Ejemplo:
- * return [
- *      ['GET', 'about', 'index#about'],
- *      ['GET', 'user/test/[0-9]*', user#testService', 'user_test']
- * ]
- */
-
 return [
-    
+    100 => 'Los datos no se recibieron correctamente',
+    101 => 'El formulario que intenta enviar expir&oacute;',
+    404 => 'Sector no encontrado',
+    409 => 'Ocurri&oacute; un problema y se puede continuar en este momento.'
 ];
