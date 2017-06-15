@@ -1,11 +1,12 @@
 {
     "name": "poweronsystem/webtemplate",
+    "type": "project",
     "description": "Template for webframework",
     "keywords": ["framework", "web design template", "webframework"],
     "homepage": "https://github.com/poweronsystem/webtemplate",
     "license": "GPL",
     "require": {
-        "poweronsystem/webframework": "dev-master"
+        "poweronsystem/webframework": "^0.1.0"
     },
     "authors": [
         {
