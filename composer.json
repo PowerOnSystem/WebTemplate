@@ -1,6 +1,6 @@
 {
     "name": "poweronsystem/webtemplate",
-    "version": "dev-master",
+    "version": "v0.1.0",
     "description": "Template for webframework",
     "keywords": ["framework", "web design template", "webframework"],
     "homepage": "https://github.com/poweronsystem/webtemplate",
