@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "87cb52c7301538305251e2b5ebed3dfb",
+    "content-hash": "9771754920c0ad4d813713a1495fb9b0",
     "packages": [
         {
             "name": "altorouter/altorouter",
@@ -60,6 +60,69 @@
                 "routing"
             ],
             "time": "2015-11-30T00:47:43+00:00"
+        },
+        {
+            "name": "fightbulc/moment",
+            "version": "1.26.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/fightbulc/moment.php.git",
+                "reference": "cdd7e35a03d2fe13e8d050c9526eaeea241f9b0e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/fightbulc/moment.php/zipball/cdd7e35a03d2fe13e8d050c9526eaeea241f9b0e",
+                "reference": "cdd7e35a03d2fe13e8d050c9526eaeea241f9b0e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "4.2.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Moment\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ashish Tilara",
+                    "email": "ashish@itcutives.com",
+                    "role": "developer"
+                },
+                {
+                    "name": "Jaroslaw Kozak",
+                    "email": "jaroslaw.kozak68@gmail.com",
+                    "role": "developer"
+                },
+                {
+                    "name": "Tino Ehrich",
+                    "email": "tino@bigpun.me",
+                    "role": "developer"
+                }
+            ],
+            "description": "Parse, validate, manipulate, and display dates in PHP w/ i18n support. Inspired by moment.js",
+            "keywords": [
+                "date",
+                "display",
+                "format",
+                "i18n",
+                "locale",
+                "manipulate",
+                "moment",
+                "parse",
+                "time",
+                "translation",
+                "validate"
+            ],
+            "time": "2017-05-15T09:09:18+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -239,20 +302,21 @@
         },
         {
             "name": "poweronsystem/webframework",
-            "version": "dev-master",
+            "version": "v0.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PowerOnSystem/WebFramework.git",
-                "reference": "4c45aeba147ce67fbb8b96b23ac0bd554ed28092"
+                "reference": "e1941a083f350c0218346a4408df74e66ce30e27"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PowerOnSystem/WebFramework/zipball/4c45aeba147ce67fbb8b96b23ac0bd554ed28092",
-                "reference": "4c45aeba147ce67fbb8b96b23ac0bd554ed28092",
+                "url": "https://api.github.com/repos/PowerOnSystem/WebFramework/zipball/e1941a083f350c0218346a4408df74e66ce30e27",
+                "reference": "e1941a083f350c0218346a4408df74e66ce30e27",
                 "shasum": ""
             },
             "require": {
                 "altorouter/altorouter": "^1.2",
+                "fightbulc/moment": "^1.26",
                 "mobiledetect/mobiledetectlib": "^2.8",
                 "monolog/monolog": "^1.22",
                 "php": ">=5.4",
@@ -288,7 +352,7 @@
                 "web design",
                 "web utilities"
             ],
-            "time": "2017-06-08 16:40:39"
+            "time": "2017-06-15T13:36:18+00:00"
         },
         {
             "name": "psr/log",
@@ -341,10 +405,8 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": {
-        "poweronsystem/webframework": 20
-    },
-    "prefer-stable": false,
+    "stability-flags": [],
+    "prefer-stable": true,
     "prefer-lowest": false,
     "platform": [],
     "platform-dev": []
