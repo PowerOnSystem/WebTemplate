@@ -71,7 +71,12 @@ class Console {
                 '\t"name": "poweronsystem/' . $app . '",' . PHP_EOL .
                 '\t"type": "library",' . PHP_EOL .
                 '\t"require": {' . PHP_EOL .
-                    '"\t\tpoweronsystem/webframework": "^0.1.0"' . PHP_EOL .
+                    '\t\t"poweronsystem/webframework": "^0.1.0"' . PHP_EOL .
+                '\t},' . PHP_EOL .
+                '\t"autoload": {' . PHP_EOL .
+                    '\t\t"psr-4": {' . PHP_EOL .
+                        '\t\t\t"App\\": "src"' . PHP_EOL .
+                    '\t\t}' . PHP_EOL .
                 '\t}' . PHP_EOL .
             '}');
         fclose($file);

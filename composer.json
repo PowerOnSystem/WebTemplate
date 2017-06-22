@@ -18,7 +18,8 @@
     ],
     "autoload": {
         "psr-4": {
-            "PowerOn\\Console\\": "config/"
+            "PowerOn\\Console\\": "config/",
+            "App\\": "src"
         }
     },
     "scripts": {
