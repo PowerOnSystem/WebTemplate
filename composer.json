@@ -6,7 +6,7 @@
     "homepage": "https://github.com/poweronsystem/webtemplate",
     "license": "GPL",
     "require": {
-        "poweronsystem/webframework": "^0.1.0"
+        "poweronsystem/webframework": "^0.1.1"
     },
     "authors": [
         {
