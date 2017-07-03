@@ -17,5 +17,12 @@
  */
 
 /* @var $this PowerOn\View\View */
-echo $this->content();
+/* @var $exception \PowerOn\Exceptions\PowerOnException */
+$exception = $this->exception;
 ?>
+
+<h1>Error en modo producci&oacute;n</h1>
+<h3>Excepcion completa</h3>
+<?php k($exception) ?>
+<h3>Excepcion anterior</h3>
+<?php k($exception->getPrevious());

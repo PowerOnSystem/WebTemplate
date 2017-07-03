@@ -6,7 +6,7 @@
     "homepage": "https://github.com/poweronsystem/webtemplate",
     "license": "GPL",
     "require": {
-        "poweronsystem/webframework": "^0.1.1"
+        "poweronsystem/webframework": "^0.1.2"
     },
     "authors": [
         {
@@ -18,7 +18,6 @@
     ],
     "autoload": {
         "psr-4": {
-            "PowerOn\\Console\\": "config/",
             "App\\": "src"
         }
     },

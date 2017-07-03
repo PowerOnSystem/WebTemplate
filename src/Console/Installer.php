@@ -20,17 +20,19 @@
 namespace App\Console;
 
 use Composer\Script\Event;
+use PowerOn\Application\Console;
+
 /**
  * Console configura todo el proyecto luego de instalarlo
  * @author Lucas Sosa
  */
-class Console {
+class Installer extends Console {
     
     /**
      * Crea la clave única de la aplicación
      */
     public static function postInstall(Event $event) {
-        $dir = dirname(dirname(__FILE__));
+        $dir = dirname(dirname(dirname(__FILE__)));
         $dir_explode = explode(DIRECTORY_SEPARATOR, $dir);
         
         $app = end($dir_explode);
@@ -38,17 +40,22 @@ class Console {
         $io = $event->getIO();
         
         $io->write('Generando clave de seguridad unica.');
+        self::createSecurityPassword($dir);
+        
+        $io->write('Configurando aplicacion.');
+        self::createJsonFile($dir, $app, $io);        
+    }
+    
+    /**
+     * Crea un archivo con la contraseña privada del framework
+     * @param string $dir Directorio raiz de la aplicacion
+     */
+    public static function createSecurityPassword($dir) {
         $keyfile = $dir . DIRECTORY_SEPARATOR . 'appkey.txt';
         
         $file = fopen($keyfile, 'w');
         fwrite($file, bin2hex(random_bytes(96)));
         fclose($file);
-        
-        $io->write('Configurando aplicacion.');
-        
-        self::createJsonFile($dir, $app, $io);
-        
-        
     }
     /**
      * Crea el archivo composer

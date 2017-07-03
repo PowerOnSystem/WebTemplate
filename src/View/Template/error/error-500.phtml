@@ -16,9 +16,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-/* @var $this PowerOn\View\View */
+use PowerOn\Utility\Config;
 ?>
-<?php foreach ( $this->errors as $error ) : ?>
-<h1><?= $error['title'] ?> <?= $error['code'] ?></h1>
-<h3><?= $error['message'] ?></h3>
-<?php endforeach ?>
+<h1>Temporalmente fuera de servicio...</h1>
+<p>
+    Contactese con el webmaster para m&aacute;s detalles:
+    <a href="mailto:<?= Config::get('Webmaster.email') ?>"><?= Config::get('Webmaster.name') ?></a>
+</p>
