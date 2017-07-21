@@ -1,5 +1,5 @@
 # Plantilla para WebTemplate
-Plantilla de página web para el framework WebFramework v1.0 de PowerOn Sistemas
+Plantilla de página web para el framework WebFramework v0.1.3 de PowerOn Sistemas
 
 ## Instalación vía Composer
 
