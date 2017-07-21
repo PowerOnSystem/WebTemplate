@@ -23,6 +23,5 @@
     },
     "scripts": {
         "post-install-cmd": "PowerOn\\Console\\Console::postInstall"
-    },
-    "prefer-stable": true
+    }
 }
